@@ -5,7 +5,7 @@
         "age": "19",
         "experience": [
             {
-                "name": "Programmer",
+                "name": "Programmer", 
                 "company": "CORAgeo",
                 "start": "July 2021",
                 "end": null

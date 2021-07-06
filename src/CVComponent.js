@@ -1,8 +1,8 @@
 import React from 'react'
 
 function CV(id) {
-  var json = require('./CVs.json')
-  const Person = json['en'][parseInt(id['id']) - 1]
+  var json = require('./lang/CV/en.json')
+  const Person = json[parseInt(id['id']) - 1]
   console.log(Person)
   var Meno = Person['name']
   var Age = Person['age']

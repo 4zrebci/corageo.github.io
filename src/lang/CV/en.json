@@ -38,10 +38,47 @@
     {
         "id": 2,
         "name": "Marek Kormoš",
-        "experience": [],
-        "education": [],
-        "skills": "",
-        "interests": ""
+        "experience": [
+            {
+                "name": "Dishwasher",
+                "company": "iba.tu",
+                "start": "July 2020",
+                "end": "August 2020"
+            },
+            {
+                "name": "Programmer",
+                "company": "CORAgeo",
+                "start": "July 2021",
+                "end": null
+            }
+        ],
+        "education": [
+            {
+                "startYear": 2018,
+                "endYear": 2022,
+                "schoolName": "Súkromná stredná odborná škola Tatranská Akadémia",
+                "schoolAddress": "Ul. 29. augusta, 058 01 Poprad"
+            }
+        ],
+        "skills": [
+            "HTML",
+            "CSS",
+            "JS",
+            "PHP",
+            "tailwind CSS",
+            "Photoshop",
+            "Ilustrator",
+            "Lightroom",
+            "InDesign",
+            "Premier Pro"
+        ],
+        "interests": [
+            "Sports",
+            "Cycling",
+            "Religion",
+            "Programming",
+            "Playing guitar & piano"
+        ]
     },
     {
         "id": 3,

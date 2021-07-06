@@ -75,6 +75,10 @@ function CV(id) {
           <img src={Person.img} alt={Name} className="rounded-2xl" />
         </div>
       </div>
+      
+      <div className=" mx-20 mt-10 px-8 py-4 rounded-2xl backdrop-filter backdrop-blur-xl bg-opacity-25 border border-gray-500" id="contanct-form">
+        Contact form - Under construction...
+      </div>
     </div>
   )
 }

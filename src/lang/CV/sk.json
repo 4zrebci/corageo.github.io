@@ -107,5 +107,50 @@
             "knihy",
             "hudba"
         ]
+    },
+    {
+        "id": 2,
+        "name": "Marek Kormoš",
+        "experience": [
+            {
+                "name": "Umývač riadu",
+                "company": "iba.tu",
+                "start": "Júl 2020",
+                "end": "August 2020"
+            },
+            {
+                "name": "Programmer",
+                "company": "CORAgeo",
+                "start": "Júl 2021",
+                "end": null
+            }
+        ],
+        "education": [
+            {
+                "startYear": 2018,
+                "endYear": 2022,
+                "schoolName": "Súkromná stredná odborná škola Tatranská Akadémia",
+                "schoolAddress": "Ul. 29. augusta, 058 01 Poprad"
+            }
+        ],
+        "skills": [
+            "HTML",
+            "CSS",
+            "JS",
+            "PHP",
+            "tailwind CSS",
+            "Photoshop",
+            "Ilustrator",
+            "Lightroom",
+            "InDesign",
+            "Premier Pro"
+        ],
+        "interests": [
+            "Šport",
+            "Cyklistka",
+            "Viera",
+            "Programovanie",
+            "Hranie na gitare a piano"
+        ]
     }
 ]

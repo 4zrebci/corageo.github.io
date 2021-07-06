@@ -22,13 +22,13 @@ function CV(id) {
 
   function Skills() {
     return (Person['skills'].map((skill) => {
-      return <>{skill} <br></br></>
+      return <>{skill} <br /></>
     }))
   }
 
   function Interests() {
     return (Person['interests'].map((interest) => {
-      return <>{interest} <br></br></>
+      return <>{interest} <br /></>
     }))
   }
 

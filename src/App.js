@@ -13,6 +13,13 @@ function App() {
   return (
     <Router>
   <Switch>
+  <Route path="">
+       <div>
+        <Header />
+        <Main />
+        <Footer />
+       </div>
+    </Route>
     <Route path="/en/home">
        <div>
         <Header />

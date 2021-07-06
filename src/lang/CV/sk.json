@@ -62,10 +62,10 @@
         ],
         "education": [
             {
-                "startYear": 2018,
-                "endYear": 2022,
-                "schoolName": "Gymnázium na ul.Dominika Tatarku v Poprade",
-                "schoolAddress": "Ul. Dominika Tatarku 4666/7, 058 01 Poprad"
+                "start": 2018,
+                "end": 2022,
+                "name": "Gymnázium na ul.Dominika Tatarku v Poprade",
+                "address": "Ul. Dominika Tatarku 4666/7, 058 01 Poprad"
             }
         ],
         "skills": [

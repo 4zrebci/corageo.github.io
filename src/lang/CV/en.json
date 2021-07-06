@@ -58,10 +58,10 @@
         ],
         "education": [
             {
-                "startYear": 2018,
-                "endYear": 2022,
-                "schoolName": "Súkromná stredná odborná škola Tatranská Akadémia",
-                "schoolAddress": "Ul. 29. augusta, 058 01 Poprad"
+                "start": 2018,
+                "end": 2022,
+                "name": "Súkromná stredná odborná škola Tatranská Akadémia",
+                "address": "Ul. 29. augusta, 058 01 Poprad"
             }
         ],
         "skills": [

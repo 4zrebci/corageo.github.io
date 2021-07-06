@@ -33,11 +33,11 @@ function CV(id) {
   }
 
   return (
-    <div>
-      <section id="about">
+    <div className="w-100 bg-gradient-to-r from-yellow-400 via-red-500 to-pink-500" >
+      <section className="px-4 mt-10 mx-10 rounded-xl border-8 border-gray-700 " id="about">
         <div>
-          <h1>{Meno}</h1>
-          <h3>{Age}</h3>
+          <h1><b>Meno:</b> {Meno}</h1>
+          <h3><b>Vek:</b> {Age}</h3>
         </div>
       </section>
       <section id="Experience">

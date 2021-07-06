@@ -13,7 +13,7 @@ function Header() {
             <li className="px-20">CV - 4 žrebci</li>
             <li>
             <DropdownButton title="Lang">
-            <Dropdown.Item href={`/sk/${useLocation().pathname.slice(4)}`}>sk</Dropdown.Item>
+            <Dropdown.Item href={`/sk/${useLocation().pathname.slice(4)}`}>sk<br /></Dropdown.Item>
             <Dropdown.Item href={`/en/${useLocation().pathname.slice(4)}`}>en</Dropdown.Item>
             </DropdownButton>
             </li>

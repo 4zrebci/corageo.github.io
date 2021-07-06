@@ -1,0 +1,148 @@
+[
+    {
+        "id": 1,
+        "name": "Samuel Manik",
+        "age": "19",
+        "experience": [
+            {
+                "name": "Programmer",
+                "company": "CORAgeo",
+                "start": "July 2021",
+                "end": null
+            },
+            {
+                "name": "part-time worker",
+                "company": "VUB bank",
+                "start": "July 2019",
+                "end": "June 2021"
+            }
+        ],
+        "education": [
+            {
+                "start": 2017,
+                "end": 2021,
+                "name": "Gymnázium na ul.Dominika Tatarku v Poprade",
+                "address": "Dominika Tatarku 4666/7, 058 01 Poprad"
+            }
+        ],
+        "skills": [
+            "Python",
+            "C",
+            "Java"
+        ],
+        "interests": [
+            "Games",
+            "Movies"
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Marek Kormoš",
+        "experience": [
+            {
+                "name": "Dishwasher",
+                "company": "iba.tu",
+                "start": "July 2020",
+                "end": "August 2020"
+            },
+            {
+                "name": "Programmer",
+                "company": "CORAgeo",
+                "start": "July 2021",
+                "end": null
+            }
+        ],
+        "education": [
+            {
+                "startYear": 2018,
+                "endYear": 2022,
+                "schoolName": "Súkromná stredná odborná škola Tatranská Akadémia",
+                "schoolAddress": "Ul. 29. augusta, 058 01 Poprad"
+            }
+        ],
+        "skills": [
+            "HTML",
+            "CSS",
+            "JS",
+            "PHP",
+            "tailwind CSS",
+            "Photoshop",
+            "Ilustrator",
+            "Lightroom",
+            "InDesign",
+            "Premier Pro"
+        ],
+        "interests": [
+            "Sports",
+            "Cycling",
+            "Religion",
+            "Programming",
+            "Playing guitar & piano"
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Jozef Švagerko",
+        "experience": [
+            {
+                "name": "Programmer",
+                "company": "CORAgeo",
+                "start": "July 2021",
+                "end": null
+            }
+        ],
+        "education": [
+            {
+                "startYear": 2018,
+                "endYear": 2022,
+                "schoolName": "Gymnázium na ul.Dominika Tatarku v Poprade",
+                "schoolAddress": "Ul. Dominika Tatarku 4666/7, 058 01 Poprad"
+            }
+        ],
+        "skills": [
+            "Python",
+            "GML"
+        ],
+        "interests": [
+            "Sports",
+            "Games"
+        ]
+    },
+    {
+        "id": 4,
+        "name": "Marko Tomčík",
+        "age": "18",
+        "experience": [
+            {
+                "name": "Web Developer",
+                "company": "HULMAN Design Studio",
+                "start": "March 2021",
+                "end": null
+            },
+            {
+                "name": "Programmer",
+                "company": "CORAgeo",
+                "start": "July 2021",
+                "end": null
+            }
+        ],
+        "education": [
+            {
+                "start": 2018,
+                "end": 2022,
+                "name": "Stredná priemyselná škola technická",
+                "address": "Hviezdoslavová 6, 052 01 Spišská Nová Ves"
+            }
+        ],
+        "skills": [
+            "React",
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ],
+        "interests": [
+            "books",
+            "music"
+        ]
+    }
+]

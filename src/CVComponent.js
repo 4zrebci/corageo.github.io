@@ -19,6 +19,18 @@ function CV(id) {
     }))
   }
 
+  function Skills(){
+    return (Person['skills'].map((skill) => {
+      return <>{skill} <br></br></>
+  }))
+  }
+
+  function Interests(){
+    return (Person['interests'].map((interest) => {
+      return <>{interest} <br></br></>
+  }))
+  }
+
   return (
     <div>
       <section id="about">
@@ -38,29 +50,18 @@ function CV(id) {
           {Education()}
         </div>
       </section>
-    </div>
-/*
-    <section id="education">
-      <h2>Education</h2>
-      <p>
-        xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-      </p>
-    </section>
-
-    <section id="skills">
-      <h2>Skills</h2>
-      <p>
-        xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-      </p>
-    </section>
-
-    <section id="contact">
-      <h2>Interests</h2>
-      <p>
-        xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-      </p>
-    </section> 
-    </div> */
+      <section id="skills">
+      <div>
+        <h1>Skills</h1>
+        {Skills()}
+      </div>
+      </section>
+    <section id="Interests">
+      <h1>Interests</h1>
+      {Interests()}
+    </section>  
+  
+  </div>
   )
 }
 

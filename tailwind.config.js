@@ -6,6 +6,12 @@ module.exports = {
       'none': 'none',
       'blur': 'blur(20px)',
     },
+    extend: {
+      backgroundImage: theme => ({
+        'tatry': "url('./img/Corageo-tatry.jpg')",
+      })
+    }
+
   },
   variants: {
     extend: {},

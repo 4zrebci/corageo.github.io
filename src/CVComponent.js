@@ -1,4 +1,5 @@
 import React from 'react'
+import ContactForm from './ContactForm'
 
 function CV(id) {
   var lang = id['lang']
@@ -61,6 +62,7 @@ function CV(id) {
         <h1>Interests</h1>
         {Interests()}
       </section>
+      <ContactForm />
     </div>
   )
 }

@@ -2,10 +2,12 @@
     {
         "id": 1,
         "name": "Samuel Manik",
+        "url": "manik",
+        "img": "",
         "age": "19",
         "experience": [
             {
-                "name": "Programmer",
+                "name": "Programmer", 
                 "company": "CORAgeo",
                 "start": "July 2021",
                 "end": null
@@ -38,6 +40,8 @@
     {
         "id": 2,
         "name": "Marek Kormoš",
+        "url": "kormos",
+        "img": "",
         "experience": [
             {
                 "name": "Dishwasher",
@@ -83,6 +87,8 @@
     {
         "id": 3,
         "name": "Jozef Švagerko",
+        "url": "svagerko",
+        "img": "",
         "experience": [
             {
                 "name": "Programmer",
@@ -111,6 +117,8 @@
     {
         "id": 4,
         "name": "Marko Tomčík",
+        "url": "tomcik",
+        "img": "",
         "age": "18",
         "experience": [
             {

@@ -1,7 +1,8 @@
 import React from 'react'
 
 function CV(id) {
-  var json = require('./lang/CV/en.json')
+  var lang = id['lang']
+  var json = require(`./lang/CV/${lang}.json`)
   const Person = json[parseInt(id['id']) - 1]
   console.log(Person)
   var Meno = Person['name']
@@ -12,23 +13,23 @@ function CV(id) {
       return <> <div>{Job.name}</div><div>{Job.company}</div><div>{Job.start} - {Job.end}</div></>
     }))
   }
-  
-  function Education(){    //mapping Person's Education in json and pushing it to div
+
+  function Education() {    //mapping Person's Education in json and pushing it to div
     return (Person['education'].map((School) => {
       return <> <div>{School.name}</div><div>{School.adress}</div><div>{School.start} - {School.end}</div></>
     }))
   }
 
-  function Skills(){
+  function Skills() {
     return (Person['skills'].map((skill) => {
       return <>{skill} <br></br></>
-  }))
+    }))
   }
 
-  function Interests(){
+  function Interests() {
     return (Person['interests'].map((interest) => {
       return <>{interest} <br></br></>
-  }))
+    }))
   }
 
   return (
@@ -41,27 +42,27 @@ function CV(id) {
       </section>
       <section id="Experience">
         <h2>Experience</h2>
-        <div>        
+        <div>
           {Jobs()}
         </div>
       </section>
-      <section id = "Education">
+      <section id="Education">
         <div>
           {Education()}
         </div>
       </section>
       <section id="skills">
-      <div>
-        <h1>Skills</h1>
-        {Skills()}
-      </div>
+        <div>
+          <h1>Skills</h1>
+          {Skills()}
+        </div>
       </section>
-    <section id="Interests">
-      <h1>Interests</h1>
-      {Interests()}
-    </section>  
-  
-  </div>
+      <section id="Interests">
+        <h1>Interests</h1>
+        {Interests()}
+      </section>
+
+    </div>
   )
 }
 

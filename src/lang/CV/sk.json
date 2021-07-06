@@ -4,6 +4,7 @@
         "name": "Samuel Manik",
         "url": "manik",
         "img": "",
+        "desc": "",
         "age": "19",
         "experience": [
             {
@@ -42,6 +43,7 @@
         "name": "Marek Kormoš",
         "url": "kormos",
         "img": "",
+        "desc": "",
         "experience": [],
         "education": [],
         "skills": "",
@@ -52,6 +54,7 @@
         "name": "Jozef Švagerko",
         "url": "svagerko",
         "img": "",
+        "desc": "",
         "experience": [
             {
                 "name": "Programmer",
@@ -82,6 +85,7 @@
         "name": "Marko Tomčík",
         "url": "tomcik",
         "img": "",
+        "desc": "",
         "age": "18",
         "experience": [
             {

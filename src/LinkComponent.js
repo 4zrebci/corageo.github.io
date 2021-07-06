@@ -10,7 +10,7 @@ function Link() {
         <p>Marek Kormoš:</p>
         <p>Chalan zo Svitu</p>
         <button className="border rounded-lg px-20 mt-4">
-          <a>Show CV</a>
+          <a href="/en/kormos">Show CV</a>
         </button>
       </div>
     </>

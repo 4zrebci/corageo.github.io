@@ -3,6 +3,7 @@
         {
             "id": 1,
             "name": "Samuel Manik",
+            "age": "19",
             "experience": [
                 {
                     "name": "Programmer",
@@ -19,10 +20,10 @@
             ],
             "education": [
                 {
-                    "startYear": 2017,
-                    "endYear": 2021,
-                    "schoolName": "Gymnázium na ul.Dominika Tatarku v Poprade",
-                    "schoolAddress": "Dominika Tatarku 4666/7, 058 01 Poprad"
+                    "start": 2017,
+                    "end": 2021,
+                    "name": "Gymnázium na ul.Dominika Tatarku v Poprade",
+                    "address": "Dominika Tatarku 4666/7, 058 01 Poprad"
                 }
             ],
             "skills": [
@@ -90,10 +91,10 @@
             ],
             "education": [
                 {
-                    "startYear": 2018,
-                    "endYear": 2022,
-                    "schoolName": "Stredná priemyselná škola technická",
-                    "schoolAddress": "Hviezdoslavová 6, 052 01 Spišská Nová Ves"
+                    "start": 2018,
+                    "end": 2022,
+                    "name": "Stredná priemyselná škola technická",
+                    "address": "Hviezdoslavová 6, 052 01 Spišská Nová Ves"
                 }
             ],
             "skills": [
@@ -149,12 +150,15 @@
             ],
             "education": [
                 {
-                    "startYear": 2017,
-                    "endYear": 2021,
-                    "schoolName": "Gymnázium na ul.Dominika Tatarku v Poprade",
-                    "schoolAddress": "Dominika Tatarku 4666/7, 058 01 Poprad"
+                    "start": 2017,
+                    "end": 2021,
+                    "name": "Gymnázium na ul.Dominika Tatarku v Poprade",
+                    "address": "Dominika Tatarku 4666/7, 058 01 Poprad"
                 }
             ]
+<<<<<<< HEAD
+
+=======
         },
         {
             "id": 3,
@@ -175,6 +179,7 @@
                     "schoolAddress": "Dominika Tatarku 4666/7, 058 01 Poprad"
                 }
             ]
+>>>>>>> 3e662795702d0f9e50bf29b07963a5c08f8528a6
         }
     ]
 }

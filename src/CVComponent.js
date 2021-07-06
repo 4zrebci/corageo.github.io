@@ -33,11 +33,12 @@ function CV(id) {
   }
 
   //rounded-2xl backdrop-filter backdrop-blur-xl bg-opacity-25
+  //rounded-2xl backdrop-filter backdrop-blur-xl bg-opacity-25 border border-gray-500
 
   return (
     <div className="min-h-screen bg-tatry bg-cover" >
       <div id="mainInfo" className="pt-10 items-center">
-        <section className="p-4 mx-10 bg-clip-padding text-center items-center rounded-2xl backdrop-filter backdrop-blur-xl bg-opacity-25" id="about">
+        <section className="text-2xl p-4 mx-10 bg-clip-padding text-center items-center rounded-2xl backdrop-filter backdrop-blur-xl bg-opacity-25  border border-gray-500" id="about">
           <div>
             <h1><b>Meno:</b> {Name}</h1>
             <h3><b>Vek:</b> {Age}</h3>
@@ -45,26 +46,27 @@ function CV(id) {
         </section>
       </div>
 
-      <div id="info">
-        <section id="Experience">
-          <h2>Experience</h2>
+      <div id="info" className="w-3/6 mx-20 mt-10 px-10 py-4 rounded-2xl backdrop-filter backdrop-blur bg-opacity-25  border border-gray-500">
+          <h2 className="px-4 text-xl pb-2"><b>Experience</b></h2>
+        <section id="Experience" className="px-4 py-2 border border-gray-500 rounded-2xl">
           <div>
             {Jobs()}
           </div>
         </section>
-        <section id="Education">
+        <h2 className="px-4 text-xl pb-2 mt-4"><b>Education</b></h2>
+        <section id="Education" className="px-4 py-2 border border-gray-500 rounded-2xl">
           <div>
             {Education()}
           </div>
         </section>
-        <section id="skills">
+            <h2 className="px-4 text-xl pb-2 mt-4"><b>Skills</b></h2>
+        <section id="skills" className=" px-4 py-2 border border-gray-500 rounded-2xl">
           <div>
-            <h1>Skills</h1>
             {Skills()}
           </div>
         </section>
-        <section id="Interests">
-          <h1>Interests</h1>
+          <h2 className="px-4 text-xl pb-2 mt-4"><b>Interests</b></h2>
+        <section id="Interests" className="px-4 py-2 border border-gray-500 rounded-2xl">
           {Interests()}
         </section>
       </div>

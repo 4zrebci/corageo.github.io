@@ -1,5 +1,4 @@
 import React from 'react'
-import mountains from './mountains.jpg';
 
 function CV(id) {
   var lang = id['lang']

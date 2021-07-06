@@ -5,7 +5,7 @@ function CV(id) {
   var json = require(`./lang/CV/${lang}.json`)
   const Person = json[parseInt(id['id']) - 1]
   console.log(Person)
-  var Meno = Person['name']
+  var Name = Person['name']
   var Age = Person['age']
 
   function Jobs() { //mapping Person's Jobs in json and pushing it to div
@@ -32,36 +32,46 @@ function CV(id) {
     }))
   }
 
-  return (
-    <div className="w-100 bg-gradient-to-r from-yellow-400 via-red-500 to-pink-500" >
-      <section className="px-4 mt-10 mx-10 rounded-xl border-8 border-gray-700 " id="about">
-        <div>
-          <h1><b>Meno:</b> {Meno}</h1>
-          <h3><b>Vek:</b> {Age}</h3>
-        </div>
-      </section>
-      <section id="Experience">
-        <h2>Experience</h2>
-        <div>
-          {Jobs()}
-        </div>
-      </section>
-      <section id="Education">
-        <div>
-          {Education()}
-        </div>
-      </section>
-      <section id="skills">
-        <div>
-          <h1>Skills</h1>
-          {Skills()}
-        </div>
-      </section>
-      <section id="Interests">
-        <h1>Interests</h1>
-        {Interests()}
-      </section>
+  //rounded-2xl backdrop-filter backdrop-blur-xl bg-opacity-25
 
+  return (
+    <div className="min-h-screen bg-tatry bg-cover" >
+      <div id="mainInfo" className="pt-10 items-center">
+        <section className="p-4 mx-10 bg-clip-padding text-center items-center rounded-2xl backdrop-filter backdrop-blur-xl bg-opacity-25" id="about">
+          <div>
+            <h1><b>Meno:</b> {Name}</h1>
+            <h3><b>Vek:</b> {Age}</h3>
+          </div>
+        </section>
+      </div>
+
+      <div id="info">
+        <section id="Experience">
+          <h2>Experience</h2>
+          <div>
+            {Jobs()}
+          </div>
+        </section>
+        <section id="Education">
+          <div>
+            {Education()}
+          </div>
+        </section>
+        <section id="skills">
+          <div>
+            <h1>Skills</h1>
+            {Skills()}
+          </div>
+        </section>
+        <section id="Interests">
+          <h1>Interests</h1>
+          {Interests()}
+        </section>
+      </div>
+
+      <div id="fotka" className="float-right">
+        <img src={""} alt={Name}></img>
+      </div>
     </div>
   )
 }

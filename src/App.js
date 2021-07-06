@@ -19,16 +19,16 @@ function App() {
   <Route exact path="/">
   <Main />
   </Route>
-    <Route path="/en">
+    <Route exact path="/en">
      <Redirect to="/" />
     </Route>
-    <Route path="/sk">
+    <Route exact path="/sk">
     <Redirect to="/" />
     </Route>
-    <Route path="/sk/home">
+    <Route exact path="/sk/home">
     <Redirect to="/" />
     </Route>
-    <Route path="/en/home">
+    <Route exact path="/en/home">
     <Redirect to="/" />
     </Route>
     <Route path="/en/kormos">

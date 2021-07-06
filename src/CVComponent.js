@@ -61,7 +61,6 @@ function CV(id) {
         <h1>Interests</h1>
         {Interests()}
       </section>
-
     </div>
   )
 }

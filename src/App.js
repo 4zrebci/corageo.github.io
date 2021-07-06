@@ -7,7 +7,8 @@ import {
   Switch,
   Route,
   Link,
-  Redirect
+  Redirect,
+  useLocation
 } from "react-router-dom";
 
 function App() {
@@ -45,12 +46,26 @@ function App() {
     <Route path="/sk/svagerko">
         <CV id="3" lang = "sk" />
     </Route>
+    <Route path="*">
+      <NoMatch />
+    </Route>
   </Switch>
   <Footer />
     </Router>
 
   )
 }
-
-
+function NoMatch() {
+  let location = useLocation();
+  return (
+    <div className="flex flex-wrap justify-center items-stretch bg-gradient-to-r from-yellow-400 via-red-500 to-pink-500 h-screen" >
+      <h1 className = "text-4xl text-center self-center">
+        This site does not exist.
+        <h3>
+        {location.pathname}
+      </h3>
+      </h1>
+    </div>
+  );
+}
 export default App

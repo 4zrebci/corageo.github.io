@@ -2,6 +2,7 @@ import Header from './HeaderComponent'
 import Main from './MainComponent'
 import Footer from './FooterComponent'
 import CV from './CVComponent'
+
 import {
   BrowserRouter as Router,
   Switch,
@@ -19,7 +20,7 @@ function App() {
   <Route exact path="/">
   <Main />
   </Route>
-    <Route path="/en/home">
+    <Route path="/home">
       <Redirect to="/" />
     </Route>
     <Route path="/en/kormos">

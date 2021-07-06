@@ -1,10 +1,14 @@
 import Header from './HeaderComponent'
 import Main from './MainComponent'
 import Footer from './FooterComponent'
+import CV from './CVComponent'
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 
-//<Header />
-//      <Main />                            
-//      <Footer />
 function App() {
   return (
     <Router>
@@ -42,14 +46,5 @@ function App() {
   )
 }
 
-function home(){
-  return(
-    <div>
-  <Header />
-  <Main />
-  <Footer />
-  </div>
-  )
-}
 
 export default App

@@ -45,34 +45,35 @@ function CV(id) {
           </div>
         </section>
       </div>
+      <div className="flex">
+        <div id="info" className="inline-block w-1/2 ml-20 mt-10 px-10 py-4 rounded-2xl backdrop-filter backdrop-blur bg-opacity-25  border border-gray-500">
+            <h2 className="px-4 text-xl pb-2"><b>Experience</b></h2>
+          <section id="Experience" className="px-4 py-2 border border-gray-500 rounded-2xl">
+            <div>
+              {Jobs()}
+            </div>
+          </section>
+          <h2 className="px-4 text-xl pb-2 mt-4"><b>Education</b></h2>
+          <section id="Education" className="px-4 py-2 border border-gray-500 rounded-2xl">
+            <div>
+              {Education()}
+            </div>
+          </section>
+              <h2 className="px-4 text-xl pb-2 mt-4"><b>Skills</b></h2>
+          <section id="skills" className=" px-4 py-2 border border-gray-500 rounded-2xl">
+            <div>
+              {Skills()}
+            </div>
+          </section>
+            <h2 className="px-4 text-xl pb-2 mt-4"><b>Interests</b></h2>
+          <section id="Interests" className="px-4 py-2 border border-gray-500 rounded-2xl">
+            {Interests()}
+          </section>
+        </div>
 
-      <div id="info" className="w-3/6 mx-20 mt-10 px-10 py-4 rounded-2xl backdrop-filter backdrop-blur bg-opacity-25  border border-gray-500">
-          <h2 className="px-4 text-xl pb-2"><b>Experience</b></h2>
-        <section id="Experience" className="px-4 py-2 border border-gray-500 rounded-2xl">
-          <div>
-            {Jobs()}
-          </div>
-        </section>
-        <h2 className="px-4 text-xl pb-2 mt-4"><b>Education</b></h2>
-        <section id="Education" className="px-4 py-2 border border-gray-500 rounded-2xl">
-          <div>
-            {Education()}
-          </div>
-        </section>
-            <h2 className="px-4 text-xl pb-2 mt-4"><b>Skills</b></h2>
-        <section id="skills" className=" px-4 py-2 border border-gray-500 rounded-2xl">
-          <div>
-            {Skills()}
-          </div>
-        </section>
-          <h2 className="px-4 text-xl pb-2 mt-4"><b>Interests</b></h2>
-        <section id="Interests" className="px-4 py-2 border border-gray-500 rounded-2xl">
-          {Interests()}
-        </section>
-      </div>
-
-      <div id="fotka" className="float-right">
-        <img src={""} alt={Name}></img>
+        <div id="fotka" className="float-right w-2/6 mt-10 mx-20 rounded-2xl backdrop-filter backdrop-blur-xl bg-opacity-25 border border-gray-500">
+          <img src={Person.img} alt={Name} className="rounded-2xl" />
+        </div>
       </div>
     </div>
   )

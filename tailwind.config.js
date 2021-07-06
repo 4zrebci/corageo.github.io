@@ -10,8 +10,10 @@ module.exports = {
       backgroundImage: theme => ({
         'tatry': "url('./img/Corageo-tatry.jpg')",
       })
+    },
+    fontFamily: {
+      'display': ['Rubik']
     }
-
   },
   variants: {
     extend: {},

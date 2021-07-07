@@ -1,6 +1,4 @@
-# unschooled
-
-Documentation: https://docs.google.com/document/d/1zX0L4puJzKujGLVtWGxeKu8JXcTygIPxIIZTG7EC0wg/edit?usp=sharing
+# corageo.github.io
 
 ## Run it
 

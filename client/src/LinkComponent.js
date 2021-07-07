@@ -7,9 +7,11 @@ function Link({ person }) {
         <img src={person.id} alt={person.desc} />
         <p>{person.name}:</p>
         <p>{person.desc}</p>
-        <button className="border rounded-lg px-20 mt-4">
-          <a href={'/en/' + person.url}>Show CV</a>
-        </button>
+        <a href={'/en/' + person.url}>
+          <button className="border rounded-lg px-20 mt-4">
+            Show CV
+          </button>
+        </a>
       </div>
     </>
   )

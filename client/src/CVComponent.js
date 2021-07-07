@@ -46,7 +46,7 @@ function CV(id) {
           </div>
         </section>
       </div>
-      <div className="flex">
+      <div className="flex items-start">
         <div id="info" className="inline-block w-1/2 ml-20 mt-10 px-10 py-4 rounded-2xl backdrop-filter backdrop-blur bg-opacity-25  border border-gray-500">
             <h2 className="px-4 text-xl pb-2"><b>Experience</b></h2>
           <section id="Experience" className="px-4 py-2 border border-gray-500 rounded-2xl">
@@ -72,8 +72,8 @@ function CV(id) {
           </section>
         </div>
 
-        <div id="fotka" className="float-right w-2/6 mt-10 mx-20 rounded-2xl backdrop-filter backdrop-blur-xl bg-opacity-25 border border-gray-500">
-          <img src={Person.img} alt={Name} className="rounded-2xl" />
+        <div id="fotka" className="w-2/6 mt-10 mx-20 rounded-2xl backdrop-filter backdrop-blur-xl bg-opacity-25 border border-gray-500">
+          <img src={Person.img} alt={Name} className="min-w-full rounded-2xl" />
         </div>
       </div>
       

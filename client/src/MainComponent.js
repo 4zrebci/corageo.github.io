@@ -6,7 +6,7 @@ function Main() {
   console.log(json)
 
   return (
-    <div className="flex flex-wrap h-full justify-center items-stretch bg-tatry object-cover">
+    <div className="flex flex-wrap justify-center items-stretch bg-tatry bg-repeat">
       {
         json.map((person) => {
           console.log(person)

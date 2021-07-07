@@ -12,7 +12,7 @@
                 "company": "CORAgeo",
                 "start": "Júl 2021",
                 "end": null
-            },
+            }, 
             {
                 "name": "brigádnik",
                 "company": "VUB banka",
@@ -35,31 +35,21 @@
         ],
         "interests": [
             "Hry",
-            "Film"
+            "Filmy"
         ]
-    },
-    {
-        "id": 2,
-        "name": "Marek Kormoš",
-        "url": "kormos",
-        "img": "",
-        "desc": "",
-        "experience": [],
-        "education": [],
-        "skills": "",
-        "interests": ""
     },
     {
         "id": 3,
         "name": "Jozef Švagerko",
         "url": "svagerko",
-        "img": "",
+        "img": "/img/id3.jpg",
         "desc": "",
+        "age": "18",
         "experience": [
             {
-                "name": "Programmer",
+                "name": "Programátor",
                 "company": "CORAgeo",
-                "start": "July 2021",
+                "start": "Júl 2021",
                 "end": null
             }
         ],
@@ -76,8 +66,10 @@
             "GML"
         ],
         "interests": [
-            "Sports",
-            "Games"
+            "Šport",
+            "Hry",
+            "Programovanie",
+            "Seriály"
         ]
     },
     {

@@ -1,4 +1,5 @@
 import React from 'react'
+import ContactForm from './ContactForm'
 
 function CV(id) {
   var lang = id['lang']

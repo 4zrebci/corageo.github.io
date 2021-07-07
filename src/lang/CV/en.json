@@ -42,8 +42,9 @@
         "id": 2,
         "name": "Marek Kormoš",
         "url": "kormos",
-        "img": "",
+        "img": "/img/Marek.jpg",
         "desc": "",
+        "age": "18",
         "experience": [
             {
                 "name": "Dishwasher",
@@ -124,7 +125,7 @@
         "id": 4,
         "name": "Marko Tomčík",
         "url": "tomcik",
-        "img": "",
+        "img": "/img/marko.jpg",
         "desc": "",
         "age": "18",
         "experience": [

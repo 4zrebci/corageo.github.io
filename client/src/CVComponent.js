@@ -37,7 +37,7 @@ function CV({ id, lang }) {
   //rounded-2xl backdrop-filter backdrop-blur-xl bg-opacity-25 border border-gray-500
 
   return (
-    <div className="min-h-screen bg-tatry bg-cover" >
+    <div className="min-h-screen bg-tatry bg-cover pb-28" >
       <div id="mainInfo" className="pt-10 items-center">
         <section className="text-2xl p-4 mx-10 bg-clip-padding text-center items-center rounded-2xl backdrop-filter backdrop-blur-xl bg-opacity-25  border border-gray-500" id="about">
           <div>
@@ -46,7 +46,7 @@ function CV({ id, lang }) {
           </div>
         </section>
       </div>
-      <div className="flex">
+      <div className="flex items-start">
         <div id="info" className="inline-block w-1/2 ml-20 mt-10 px-10 py-4 rounded-2xl backdrop-filter backdrop-blur bg-opacity-25  border border-gray-500">
             <h2 className="px-4 text-xl pb-2"><b>{string.cv.experience}</b></h2>
           <section id="Experience" className="px-4 py-2 border border-gray-500 rounded-2xl">
@@ -72,12 +72,12 @@ function CV({ id, lang }) {
           </section>
         </div>
 
-        <div id="fotka" className="float-right w-2/6 mt-10 mx-20 rounded-2xl backdrop-filter backdrop-blur-xl bg-opacity-25 border border-gray-500">
-          <img src={Person.img} alt={Name} className="rounded-2xl" />
+        <div id="fotka" className="w-2/6 mt-10 mx-20 rounded-2xl backdrop-filter backdrop-blur-xl bg-opacity-25 border border-gray-500">
+          <img src={Person.img} alt={Name} className="min-w-full rounded-2xl" />
         </div>
       </div>
       
-      <div className=" mx-20 mt-10 px-8 py-4 rounded-2xl backdrop-filter backdrop-blur-xl bg-opacity-25 border border-gray-500" id="contanct-form">
+      <div className="mx-20 mt-8 px-8 py-4 rounded-2xl backdrop-filter backdrop-blur-xl bg-opacity-25 border border-gray-500" id="contanct-form">
         Contact form - Under construction...
       </div>
     </div>

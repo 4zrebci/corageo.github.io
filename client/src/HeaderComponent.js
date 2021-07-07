@@ -19,11 +19,11 @@ function Header() {
             <DropdownButton drop="right" title={string.header.lang} className=" border rounded-lg p-2">
               <div className="ml-4 border rounded-lg py-2 -mt-2">
                 <Dropdown.Item className="rounded-lg px-2 py-2 hover:bg-gray-300" href={`/sk/${useLocation().pathname.slice(4)}`}>
-                  <img className="inline-block h-8 w-8" src={sksvg} />
+                  <img className="inline-block h-8 w-8" src={sksvg} alt="SK Flag" />
                 </Dropdown.Item>
                 <p className="inline"> / </p>
                 <Dropdown.Item className="rounded-lg px-2 py-2 hover:bg-gray-300" href={`/en/${useLocation().pathname.slice(4)}`}>
-                  <img className="inline-block h-8 w-8" src={ensvg} />
+                  <img className="inline-block h-8 w-8" src={ensvg} alt="UK Flag" />
                 </Dropdown.Item>
               </div>
             </DropdownButton>

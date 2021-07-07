@@ -78,7 +78,7 @@ function CV({ id, lang }) {
       </div>
       
       <div className="mx-20 mt-8 px-8 py-4 rounded-2xl backdrop-filter backdrop-blur-xl bg-opacity-25 border border-gray-500" id="contanct-form">
-        Contact form - Under construction...
+        <ContactForm />
       </div>
     </div>
   )

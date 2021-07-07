@@ -1,0 +1,17 @@
+{
+  "header": {
+    "lang": "Language"
+  },
+  "main": {
+    "button": "Show CV"
+  },
+  "cv": {
+    "name": "Name: ",
+    "age": "Age: ",
+    "experience": "Experience",
+    "education": "Education",
+    "skills": "Skills",
+    "interests": "Interests"
+  },
+  "contact": {}
+}

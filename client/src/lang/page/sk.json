@@ -1,0 +1,17 @@
+{
+  "header": {
+    "lang": "Jazyk"
+  },
+  "main": {
+    "button": "Zobraziť životopis"
+  },
+  "cv": {
+    "name": "Meno: ",
+    "age": "Vek: ",
+    "experience": "Skúsenosti",
+    "education": "Vzdelanie",
+    "skills": "Schopnosti",
+    "interests": "Záujmy"
+  },
+  "contact": {}
+}

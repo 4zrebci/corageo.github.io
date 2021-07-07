@@ -1,10 +1,10 @@
 import React from 'react'
 import ContactForm from './ContactForm'
 
-function CV(id) {
-  var lang = id['lang']
-  var json = require(`./lang/CV/${lang}.json`)
-  const Person = json[parseInt(id['id']-1)]
+function CV({ id, lang }) {
+  const json = require(`./lang/CV/${lang}.json`)
+  const string = require(`./lang/page/${lang}.json`)
+  const Person = json[parseInt(id-1)]
   console.log(Person)
   var Name = Person['name']
   var Age = Person['age']
@@ -41,32 +41,32 @@ function CV(id) {
       <div id="mainInfo" className="pt-10 items-center">
         <section className="text-2xl p-4 mx-10 bg-clip-padding text-center items-center rounded-2xl backdrop-filter backdrop-blur-xl bg-opacity-25  border border-gray-500" id="about">
           <div>
-            <h1><b>Meno:</b> {Name}</h1>
-            <h3><b>Vek:</b> {Age}</h3>
+            <h1><b>{string.cv.name}</b> {Name}</h1>
+            <h3><b>{string.cv.age}</b> {Age}</h3>
           </div>
         </section>
       </div>
       <div className="flex">
         <div id="info" className="inline-block w-1/2 ml-20 mt-10 px-10 py-4 rounded-2xl backdrop-filter backdrop-blur bg-opacity-25  border border-gray-500">
-            <h2 className="px-4 text-xl pb-2"><b>Experience</b></h2>
+            <h2 className="px-4 text-xl pb-2"><b>{string.cv.experience}</b></h2>
           <section id="Experience" className="px-4 py-2 border border-gray-500 rounded-2xl">
             <div>
               {Jobs()}
             </div>
           </section>
-          <h2 className="px-4 text-xl pb-2 mt-4"><b>Education</b></h2>
+          <h2 className="px-4 text-xl pb-2 mt-4"><b>{string.cv.education}</b></h2>
           <section id="Education" className="px-4 py-2 border border-gray-500 rounded-2xl">
             <div>
               {Education()}
             </div>
           </section>
-              <h2 className="px-4 text-xl pb-2 mt-4"><b>Skills</b></h2>
+              <h2 className="px-4 text-xl pb-2 mt-4"><b>{string.cv.skills}</b></h2>
           <section id="skills" className=" px-4 py-2 border border-gray-500 rounded-2xl">
             <div>
               {Skills()}
             </div>
           </section>
-            <h2 className="px-4 text-xl pb-2 mt-4"><b>Interests</b></h2>
+            <h2 className="px-4 text-xl pb-2 mt-4"><b>{string.cv.interests}</b></h2>
           <section id="Interests" className="px-4 py-2 border border-gray-500 rounded-2xl">
             {Interests()}
           </section>

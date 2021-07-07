@@ -18,19 +18,13 @@ function App() {
         <Header />
         <Switch>
           <Route exact path="/">
-            <Main />
+            <Redirect to="/en/" />
           </Route>
-          <Route exact path="/en">
-            <Redirect to="/" />
+          <Route exact path="/en/">
+            <Main lang="en" />
           </Route>
-          <Route exact path="/sk">
-            <Redirect to="/" />
-          </Route>
-          <Route exact path="/sk/home">
-            <Redirect to="/" />
-          </Route>
-          <Route exact path="/en/home">
-            <Redirect to="/" />
+          <Route exact path="/sk/">
+            <Main lang="sk" />
           </Route>
           <Route path="/en/kormos">
             <CV id="2" lang='en' />

@@ -7,7 +7,7 @@ import Dropdown from 'react-bootstrap/Dropdown'
 import {useLocation}  from 'react-router-dom/'
 
 function Header() {
-  const lang = useLocation().pathname.slice(1, 3)
+  const lang = useLocation().pathname.slice(1, 3) || "en"
   const string = require(`./lang/page/${lang}.json`)
 
   return (

@@ -4,7 +4,7 @@ import ContactForm from './ContactForm'
 function CV(id) {
   var lang = id['lang']
   var json = require(`./lang/CV/${lang}.json`)
-  const Person = json[parseInt(id['id']) - 1]
+  const Person = json[parseInt(id['id']-1)]
   console.log(Person)
   var Name = Person['name']
   var Age = Person['age']

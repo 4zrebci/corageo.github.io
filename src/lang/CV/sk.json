@@ -3,7 +3,7 @@
         "id": 1,
         "name": "Samuel Manik",
         "url": "manik",
-        "img": "",
+        "img": "/img/manik.jpg",
         "desc": "",
         "age": "19",
         "experience": [
@@ -12,7 +12,7 @@
                 "company": "CORAgeo",
                 "start": "Júl 2021",
                 "end": null
-            },
+            }, 
             {
                 "name": "brigádnik",
                 "company": "VUB banka",
@@ -35,31 +35,21 @@
         ],
         "interests": [
             "Hry",
-            "Film"
+            "Filmy"
         ]
-    },
-    {
-        "id": 2,
-        "name": "Marek Kormoš",
-        "url": "kormos",
-        "img": "",
-        "desc": "",
-        "experience": [],
-        "education": [],
-        "skills": "",
-        "interests": ""
     },
     {
         "id": 3,
         "name": "Jozef Švagerko",
         "url": "svagerko",
-        "img": "",
+        "img": "/img/id3.jpg",
         "desc": "",
+        "age": "18",
         "experience": [
             {
-                "name": "Programmer",
+                "name": "Programátor",
                 "company": "CORAgeo",
-                "start": "July 2021",
+                "start": "Júl 2021",
                 "end": null
             }
         ],
@@ -76,15 +66,17 @@
             "GML"
         ],
         "interests": [
-            "Sports",
-            "Games"
+            "Šport",
+            "Hry",
+            "Programovanie",
+            "Seriály"
         ]
     },
     {
         "id": 4,
         "name": "Marko Tomčík",
         "url": "tomcik",
-        "img": "",
+        "img": "/img/marko.jpg",
         "desc": "",
         "age": "18",
         "experience": [
@@ -123,6 +115,10 @@
     {
         "id": 2,
         "name": "Marek Kormoš",
+        "age": "18",
+        "img": "/img/Marek.jpg",
+        "url": "kormos",
+        "desc": "",
         "experience": [
             {
                 "name": "Umývač riadu",

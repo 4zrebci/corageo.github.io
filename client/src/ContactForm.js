@@ -12,25 +12,27 @@ class ContactForm extends React.Component {
 
   render() {
     return (
-      <div className="App">
-        <form id="contact-form" onSubmit={this.handleSubmit.bind(this)} method="POST">
-          <div className="form-group">
-            <label htmlFor="name">Name</label>
-            <input type="text" className="form-control" value={this.state.name} onChange={this.onNameChange.bind(this)} />
+      <form id="contact-form" onSubmit={this.handleSubmit.bind(this)} method="POST">
+        <h3 className="text-xl mb-8"><b>Send us message!</b></h3>
+        <div className="flex">
+          <div id="labels" className="mr-4">
+              <label className="inline-block mb-2" htmlFor="name">Name :</label><br/>
+              <label className="inline-block mb-2" htmlFor="InputEmail">Email address :</label><br/>
+              <label className="inline-block mb-2" htmlFor="message">Message :</label><br/>
           </div>
-          <div className="form-group">
-            <label htmlFor="exampleInputEmail1">Email address</label>
-            <input type="email" className="form-control" aria-describedby="emailHelp" value={this.state.email} onChange={this.onEmailChange.bind(this)} />
+          <div id="inputs">
+              <input type="text" className="border-2 rounded-lg border-blue-500 bg-transparent mb-2 focus:border-blue-900 focus:outline-none px-1" value={this.state.name} onChange={this.onNameChange.bind(this)} /><br/>
+              <input type="email" className="border-2 rounded-lg border-blue-500 bg-transparent mb-2 focus:border-blue-900 focus:outline-none px-1" aria-describedby="emailHelp" value={this.state.email} onChange={this.onEmailChange.bind(this)} /><br/>
+              <textarea className="border-2 rounded-lg border-blue-500 bg-transparent mb-2 focus:border-blue-900 focus:outline-none px-1" rows="3" value={this.state.message} onChange={this.onMessageChange.bind(this)} /><br/>
           </div>
-          <div className="form-group">
-            <label htmlFor="message">Message</label>
-            <textarea className="form-control" rows="5" value={this.state.message} onChange={this.onMessageChange.bind(this)} />
-          </div>
-          <button type="submit" className="btn btn-primary">Submit</button>
-        </form>
-      </div>
+        </div>
+        <button type="submit" className="bg-blue-200 hover:bg-blue-400 border-2 border-blue-500 rounded-lg px-2">Submit</button>
+      </form>
     );
   }
+
+  //backdrop-filter backdrop-blur-xl rounded-2xl bg-opacity-25
+  //backdrop-filter backdrop-blur-xl bg-opacity-25 rounded-2xl border border-gray-500
 
   onNameChange(event) {
     this.setState({ name: event.target.value })

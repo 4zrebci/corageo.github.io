@@ -7,7 +7,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 let mails = [];
 
-const port = 3000
+const port = 3001
 
 app.get('/getMails', (req, res) => {
     let content = '';

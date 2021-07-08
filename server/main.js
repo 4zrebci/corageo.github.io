@@ -1,30 +1,35 @@
 const express = require('express')
-const bodyParser = require('body-parser');
+var cors = require('cors')
+const bodyParser = require('body-parser')
 
 const app = express()
+
+app.use(cors())
+
 app.use(express.json());  
 app.use(bodyParser.urlencoded({ extended: true }));
 
-let mails = [];
+let mails = [
+    {
+        name: "Meno Priezvisko",
+        email: "email@example.com",
+        message: "Spr98vshgjkgnjksdnhfgjsdnhfgtjnf"
+    }
+];
 
 const port = 3001
 
 app.get('/getMails', (req, res) => {
-    let content = '';
+    /* let content = '';
     for(let mail of mails) {
         content += `<h4>${mail}</h4>`;
-    }
-    res.send(content);
+    } */
+    res.send(JSON.stringify(mails));
 })
 
 app.post('/sendMail', function (req, res) {
     console.log('Got body:', req.body);
-    const getedObject = req.body;
-    if(getedObject && getedObject.mail) {
-        if(mails.indexOf(getedObject.mail) < 0) {
-            mails.push(getedObject.mail);
-        }
-    }
+    mails.push(req.body)
 
     res.sendStatus(200);
 })

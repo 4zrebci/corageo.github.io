@@ -44,26 +44,32 @@ class ContactForm extends React.Component {
     this.setState({ message: event.target.value })
   }
 
+  resetForm() {
+    this.setState({name: '', email: '', message: ''})
+  }
+
   handleSubmit(e) {
     e.preventDefault();
 
-    fetch('http://localhost:3002/send', {
-      method: "POST",
-      body: JSON.stringify(this.state),
-      headers: {
-        'Accept': 'application/json',
-        'Content-Type': 'application/json'
-      },
-    }).then(
-      (response) => (response.json())
-    ).then((response) => {
-      if (response.status === 'success') {
-        alert("Message Sent.");
-        this.resetForm()
-      } else if (response.status === 'fail') {
-        alert("Message failed to send.")
-      }
-    })
+    try {
+      fetch('http://localhost:3001/sendMail', {
+        method: "POST",
+        body: JSON.stringify(this.state),
+        headers: {
+          'Accept': 'application/json',
+          'Content-Type': 'application/json'
+        },
+      }).then((response) => {
+        if (response.status === 200) {
+          alert("Message Sent.");
+          this.resetForm()
+        } else {
+          console.log("Message failed to send.")
+        }
+      })
+    } catch {
+      console.error("chyba")
+    }
   }
 }
 
